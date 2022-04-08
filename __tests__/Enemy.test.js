@@ -5,7 +5,7 @@ jest.mock("../lib/Potion.js");
 
 test("creates an enemy object", () => {
   const enemy = new Enemy("goblin", "sword");
-
+  console.log(enemy);
   expect(enemy.name).toBe("goblin");
   expect(enemy.weapon).toBe("sword");
   expect(enemy.health).toEqual(expect.any(Number));
